@@ -1,0 +1,38 @@
+* div {
+	border: 2px black solid;
+	height: 40px;
+	width: 180px;
+	display: block;
+	margin-bottom: 10px;
+}
+
+/*#block1 {
+	background-image: url("cat0.png");
+}
+
+#block2 {
+	background-image: url("cat1.png");
+}
+
+#block3 {
+	background-image: url("cat2.png");
+}
+
+#block4 {
+	background-image: url("cat3.png");
+}
+
+#block5 {
+	background-image: url("cat4.png");
+}
+*/
+img[id^=ninja] {
+	height: 40px;
+	width: 180px;
+}
+
+img[id^=cat] {
+	height: 40px;
+	width: 180px;
+	position: absolute;
+}

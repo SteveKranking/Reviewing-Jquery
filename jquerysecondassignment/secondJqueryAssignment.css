@@ -1,0 +1,18 @@
+.box {
+	height: 250px;
+	width: 250px;
+	border-color: black;
+	border-width: 2px;
+	border-style: solid;
+	display: inline-block;
+}
+
+.ninja {
+	height: 250px;
+	width: 250px;
+}
+
+img[id^=nijna]  {
+	height: 250px;
+	width: 250px;
+}

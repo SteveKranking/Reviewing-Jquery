@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<head>
+	<title> Third JQuery Assignment </title>
+	<link rel="stylesheet" href="thirdjqueryassignment.css"> 
+
+<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+<script>
+	
+	$(document).ready(function() {
+
+			// $("#ninja1").click(function() {
+			// 	$(this).hide();
+			// });
+		
+
+			// $("#ninja2").click(function() {
+			// 	$(this).hide();
+			// });
+		
+
+			// $("#ninja3").click(function() {
+			// 	$(this).hide();
+			// });
+		
+
+			// $("#ninja4").click(function() {
+			// 	$(this).hide();
+			// });
+		
+
+			// $("#ninja5").click(function() {
+			// 	$(this).hide();
+			// });
+		
+
+			// $("#ninja6").click(function() {
+			// 	$(this).hide();
+			// });
+		
+
+			// $("#ninja7").click(function() {
+			// 	$(this).hide();
+			// });
+		
+
+			// $("#ninja8").click(function() {
+			// 	$(this).hide();
+			// }); 
+
+
+		$("img").click(function() {
+			$(this).attr("placeholder", $(this).attr("src"));
+ 			$(this).attr("src", $(this).attr("data-alt-src"));
+ 			$(this).attr("data-alt-src", $(this).attr("placeholder"));
+ 		});
+
+	});
+
+</script>
+
+</head>
+
+<body>
+
+<div id="block1">
+	<img id="ninja1" src='ninja0.png' data-alt-src='cat0.png' placeholder="cat0.png" />
+</div>
+
+<div id="block2">
+	<img id="ninja2" src='ninja1.png' data-alt-src='cat1.png' placeholder="cat1.png" />
+</div>
+
+<div id="block3">
+	<img id="ninja3" src='ninja2.png' data-alt-src='cat2.png' placeholder="cat2.png" />
+</div>
+
+<div id="block4">
+	<img id="ninja4" src='ninja3.png' data-alt-src='cat3.png' placeholder="cat3.png" />
+</div>
+
+<div id="block5">
+	<img id="ninja5" src='ninja4.png' data-alt-src='cat4.png' placeholder="cat4.png" />
+</div> 
+
+
+</body>
+</html>

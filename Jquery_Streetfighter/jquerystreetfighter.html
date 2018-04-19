@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Avanced jQuery</title>
+	<link rel="stylesheet" type="text/css" href="jquerystreetfighter.css">
+	<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+
+
+		$(document).ready(function() {
+
+			$("#beach").hover(function() {
+				$("body").attr('background', "beach.jpg"); 
+			});
+			
+			$("#dojo").hover(function() {
+				$("body").attr('background', "dojo.jpg"); 
+			});
+
+			$("#planet").hover(function() {
+				$("body").attr('background', "earth.jpg"); 
+			});
+
+			$("#forest").hover(function() {
+				$("body").attr('background', "forest.jpg"); 
+			});
+
+			$("#matrix").hover(function() {
+				$("body").attr('background', "matrix.jpg"); 
+			});
+
+			$("#snow").hover(function() {
+				$("body").attr('background', "snow.jpg"); 
+			});
+			
+		// 	$("button").click(function() {
+		// 		$("#title").html("Select Players");
+		// });
+
+			$(document).on('click', 'button', function(){$("#title").html("Select Players")});
+
+			$(document).on('click', 'button', function(){$("#buttons").html("<select> <option> Raphael </option> <option> Donatello </option> <option> Michaelangelo </option> <option> Leonardo </option> </select>")});
+
+			// $(document).on('hover', '#raphael1', function(){$("#left").html("<img src="raphael.png" alt="turtle"")});
+			// $("#raphael1").hover(function() {
+			// 	$("#left").html("<img src="raphael.png" alt="turtle">");
+			// });
+	});
+
+
+	</script>
+</head>
+<body>
+
+<!-- <body background=""> -->
+
+	<div id="warpper">
+
+		<div id="topHalf"> 
+				<div id="mapBox">
+					
+					<h1 id="title"> Select Map </h1>
+					
+					<div id="buttons">
+						
+						<button  id="beach" type="submit" name="map"> 
+							 Beach  
+						</button>
+						
+						<button id="dojo" type="submit" name="map"> 
+							 Dojo  
+						</button>
+						
+						<button id="planet"  type="submit" name="map"> 
+							 Planet 
+						</button>
+						
+						<button id="forest" type="submit" name="map">
+							 Forest  
+						</button>
+						
+						<button id="matrix" type="submit" name="map"> 
+							 Matrix 
+						</button>
+						
+						<button id="snow" type="submit" name="map"> 
+							 Snow 
+						</button>
+
+					</div>
+
+				</div>
+		</div>
+
+		<div id="bottom">
+			
+			<div id="left">
+			
+			</div>
+			
+			<div id="right">
+			
+			</div>
+
+		</div>
+
+	</div>
+	
+
+</body>
+</html>

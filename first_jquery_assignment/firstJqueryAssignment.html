@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+
+<head>
+	<title> First JQuery Assignment! </title>
+	<link rel="stylesheet" href="firstJqueryAssignment.css">
+</head>
+
+<body>
+
+<script src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+
+<script> 
+
+	$(document).ready(function() {
+		
+		$("#click").click(function() {
+		alert("This is how you use .click!");
+		});
+
+		$("#hide").click(function() { 
+			$("#hide").hide(function() {
+			alert("Animation complete");
+			});  
+		});
+		$("#show").click(function() {
+			$("#hide").show(function () {
+				alert("Look! Iit's back!");
+			});
+		});
+
+		$("#toggle").click(function() {
+			$("#toggleTo").toggle()
+		});
+
+		$("#slideDown").click(function() {
+			$(".supBro").slideDown("slow", function(){
+
+			}); 
+		});
+
+		$("#slideUp").click(function() {
+			$(".supBro").slideUp("slow", function(){
+
+			}); 
+		});
+
+		$("#slideToggle").click(function() {
+			$(".supBro").slideToggle("slow", function(){
+
+			}); 
+		});
+
+		$("#fadeIn").click(function() {
+			$(".ohHello").fadeIn("slow", function(){
+
+			}); 
+		});
+
+		$("#fadeOut").click(function() {
+			$(".ohHello").fadeOut("slow", function(){
+
+			}); 
+		});
+
+		$("#addClass").click(function() {
+			$("h1").addClass("blue"); 
+ 
+		});
+
+		$("#before").click(function() {
+			$("h1").before("<p>IT IS I</p>");
+		});
+
+		$("#after").click(function() {
+			$("h1").after("<p>IT IS STILL I</p>");
+		});
+
+		$("#append").click(function() {
+			$("h1").append("<p>STOP! ITS GROWING TOO POWERFUL!</p>");
+		});
+
+		$("#html").click(function() {
+			$("h1").html("<p>Well well well...</p>");
+		});
+
+		$("#val").click(function(){
+    		$("h2").val("This sucks");
+		});
+
+		$("#text").click(function(){
+    		$("#text").text("I hate This");
+		});
+
+		
+});
+
+	//more stuff
+
+</script>
+
+
+
+<div class="experiments"> 
+	<h1> .click </h1>
+	<button id="click" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .hide </h1>
+	<button id="hide" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .show </h1>
+	<button id="show" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .toggle </h1>
+	<button id="toggle" type="button"> Click Me! </button>
+	<p id="toggleTo"> You'll regret that!! </p>
+</div>
+
+<div class="experiments"> 
+	<h1> .slideDown </h1>
+	<button id="slideDown" type="button"> Click Me! </button> 
+	<img class="supBro" src="supbro.jpg" alt="Cat">
+</div>
+
+<div class="experiments"> 
+	<h1> .slideUp </h1>
+	<button id="slideUp" type="button"> Click Me! </button> 
+	<img class="supBro" src="supbro.jpg" alt="Cat">
+</div>
+
+<div class="experiments"> 
+	<h1> .sldeToggle </h1>
+	<button id="slideToggle" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .fadeIn </h1>
+	<button id="fadeIn" type="button"> Click Me! </button>
+	<img class="ohHello" src="ohhellothere.jpg" alt="Shrek Is Love"> 
+</div>
+
+<div class="experiments"> 
+	<h1> .fadeOut </h1>
+	<button id="fadeOut" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1 > .addClass </h1>
+	<button id="addClass" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .before </h1>
+	<button id="before" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .after </h1>
+	<button id="after" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .append </h1>
+	<button id="append" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .html </h1>
+	<button id="html" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .attr </h1>
+	<button id="attr" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .val </h1>
+	<button id="val" type="button" value="Click Me"> Click Me! </button>
+	<p> <input type="text" name="test"> </p>
+</div>
+
+<div class="experiments"> 
+	<h1> .text </h1>
+	<button id="text" type="button"> Click Me! </button> 
+</div>
+
+<div class="experiments"> 
+	<h1> .data </h1>
+	<button id="data" type="button"> Click Me! </button> 
+</div>
+
+</body>
+
+</html>

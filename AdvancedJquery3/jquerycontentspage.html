@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Avanced jQuery</title>
+	<link rel="stylesheet" type="text/css" href="jquerycontentspage.css">
+	<script type="text/javascript" src= 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<script type="text/javascript">
+
+
+		$(document).ready(function() {
+			
+			$('button').click(function() {
+				var first = $('#first').val();
+				var last = $('#last').val();
+				var desc = $('#description').val();
+			
+				$('#rightSide').append('<div class="card"> <p>' + first + " " + last + '</p> <p class="secondhalf" desc="' + desc + '"> <span> Click here to show description! </span> </p> </div>');
+				
+			$(document).on('click', '.secondhalf', function() {
+				var description2 = $(this).attr('desc');
+							$(this).html(description2);	
+
+
+			});
+
+			$("#first").val("");
+			$("#last").val("");
+			$("#desc").val("");
+			return false;
+
+			// yea this is really ugly im sorry, didn't exactly want to copy the solutuion given but wanted to look at it
+			
+
+		});
+			//description hidden at first
+			// click on text to make desc appear
+			
+			// $(document).on('click', '#toggle', function(){$(this).toggle(); });
+
+	});
+
+
+	</script>
+</head>
+<body>
+	
+	<div id="wrapper">
+	
+		<div id="leftSide">
+
+			<form>
+					<label>First Name: </label> <br />
+					<input id="first" type="text" placeholder="First Name" name="first_name"> <br/> 
+					<label>Last Name: </label> <br />
+					<input id="last" type="text" placeholder="Last Name" name="last_name"> <br />
+					<label> Description </label> <br />
+					<input  id="description" type="text" placeholder="Enter Description" name="description"> <br />
+				</form>
+				<button id="submit" value="Add User"> Add User </button>
+
+		</div>
+
+		<div id="rightSide">
+
+
+
+		</div>
+
+
+	</div>
+
+</body>
+</html>
